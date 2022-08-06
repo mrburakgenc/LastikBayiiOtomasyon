@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C5E6073C-9ACF-4AD1-BBBD-F75BCBCF348B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LastikBayiiOtomasyon</RootNamespace>
+    <AssemblyName>LastikBayiiOtomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anasayfa.Designer.cs">
+      <DependentUpon>anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bayiotomasyonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bayiotomasyonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gerialinanlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gerialinanlogin.Designer.cs">
+      <DependentUpon>gerialinanlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="islemkayitlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="islemkayitlari.Designer.cs">
+      <DependentUpon>islemkayitlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="islemkayitlarilogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="islemkayitlarilogin.Designer.cs">
+      <DependentUpon>islemkayitlarilogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lastikdepologin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lastikdepologin.Designer.cs">
+      <DependentUpon>lastikdepologin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="maaslogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maaslogin.Designer.cs">
+      <DependentUpon>maaslogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="muhasebelogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="muhasebelogin.Designer.cs">
+      <DependentUpon>muhasebelogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personellogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personellogin.Designer.cs">
+      <DependentUpon>personellogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satislogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satislogin.Designer.cs">
+      <DependentUpon>satislogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="servis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servis.Designer.cs">
+      <DependentUpon>servis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kisimaasarttir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kisimaasarttir.Designer.cs">
+      <DependentUpon>kisimaasarttir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelsil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelsil.Designer.cs">
+      <DependentUpon>personelsil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelguncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelguncelle.Designer.cs">
+      <DependentUpon>personelguncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="servislogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servislogin.Designer.cs">
+      <DependentUpon>servislogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stoklogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stoklogin.Designer.cs">
+      <DependentUpon>stoklogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="urunguncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="urunguncelle.Designer.cs">
+      <DependentUpon>urunguncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gerialinan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gerialinan.Designer.cs">
+      <DependentUpon>gerialinan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="muhasebe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="muhasebe.Designer.cs">
+      <DependentUpon>muhasebe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satis.Designer.cs">
+      <DependentUpon>satis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personel.Designer.cs">
+      <DependentUpon>personel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelekle.Designer.cs">
+      <DependentUpon>personelekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satilan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satilan.Designer.cs">
+      <DependentUpon>satilan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="maas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maas.Designer.cs">
+      <DependentUpon>maas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lastikdepo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lastikdepo.Designer.cs">
+      <DependentUpon>lastikdepo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lastikdepoislemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lastikdepoislemler.Designer.cs">
+      <DependentUpon>lastikdepoislemler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stok.Designer.cs">
+      <DependentUpon>stok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="urunekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="urunekle.Designer.cs">
+      <DependentUpon>urunekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="anasayfa.resx">
+      <DependentUpon>anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gerialinan.resx">
+      <DependentUpon>gerialinan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gerialinanlogin.resx">
+      <DependentUpon>gerialinanlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="islemkayitlari.resx">
+      <DependentUpon>islemkayitlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="islemkayitlarilogin.resx">
+      <DependentUpon>islemkayitlarilogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kisimaasarttir.resx">
+      <DependentUpon>kisimaasarttir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lastikdepo.resx">
+      <DependentUpon>lastikdepo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lastikdepoislemler.resx">
+      <DependentUpon>lastikdepoislemler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lastikdepologin.resx">
+      <DependentUpon>lastikdepologin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maas.resx">
+      <DependentUpon>maas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maaslogin.resx">
+      <DependentUpon>maaslogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="muhasebe.resx">
+      <DependentUpon>muhasebe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="muhasebelogin.resx">
+      <DependentUpon>muhasebelogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personel.resx">
+      <DependentUpon>personel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelekle.resx">
+      <DependentUpon>personelekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelguncelle.resx">
+      <DependentUpon>personelguncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personellogin.resx">
+      <DependentUpon>personellogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelsil.resx">
+      <DependentUpon>personelsil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="satilan.resx">
+      <DependentUpon>satilan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satis.resx">
+      <DependentUpon>satis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satislogin.resx">
+      <DependentUpon>satislogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servis.resx">
+      <DependentUpon>servis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servislogin.resx">
+      <DependentUpon>servislogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stok.resx">
+      <DependentUpon>stok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stoklogin.resx">
+      <DependentUpon>stoklogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="urunekle.resx">
+      <DependentUpon>urunekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="urunguncelle.resx">
+      <DependentUpon>urunguncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="bayiotomasyonDataSet.xsc">
+      <DependentUpon>bayiotomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bayiotomasyonDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bayiotomasyonDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bayiotomasyonDataSet.xss">
+      <DependentUpon>bayiotomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
